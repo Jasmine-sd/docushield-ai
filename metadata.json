@@ -1,0 +1,6 @@
+{
+  "name": "DOCUSENTRY - Universal Document & Identity Scanner",
+  "description": "Scan, verify, detect, and trust. Universal AI-driven document scanning and verification platform with real dark/light themes, automatic document identification, risk scoring, and role-separated access.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

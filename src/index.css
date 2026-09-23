@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  :root.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply antialiased selection:bg-[#B02A3A]/20 selection:text-[#B02A3A] text-[#1F2937] dark:text-[#F3F4F6];
+    background-color: #e3c1b4;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .dark body {
+    background-color: #0A0D14;
+  }
+}
+
+/* Atmospheric subtle ambient backdrop patterns & smooth gradient foundations */
+.site-bg-gradient {
+  background: linear-gradient(135deg, #e3c1b4 0%, #dbb6a8 40%, #d4aba0 70%, #e3c1b4 100%);
+  transition: background 0.5s ease, background-color 0.5s ease;
+}
+
+.dark .site-bg-gradient {
+  background: linear-gradient(135deg, #0A0D14 0%, #0F172A 45%, #0B1120 75%, #080B11 100%);
+}
+
+.bg-subtle-pattern {
+  background-color: #e3c1b4;
+  background-image: 
+    radial-gradient(rgba(176, 42, 58, 0.045) 1px, transparent 1px), 
+    radial-gradient(rgba(15, 118, 110, 0.04) 1px, transparent 1px),
+    linear-gradient(135deg, #e3c1b4 0%, #dbb6a8 45%, #d4aba0 80%, #e3c1b4 100%);
+  background-size: 32px 32px, 32px 32px, 100% 100%;
+  background-position: 0 0, 16px 16px, 0 0;
+  transition: background-color 0.4s ease, background-image 0.4s ease;
+}
+
+.dark .bg-subtle-pattern {
+  background-color: #0A0D14;
+  background-image: 
+    radial-gradient(rgba(176, 42, 58, 0.065) 1px, transparent 1px), 
+    radial-gradient(rgba(15, 118, 110, 0.055) 1px, transparent 1px),
+    linear-gradient(135deg, #0A0D14 0%, #0F172A 50%, #0B1120 80%, #080B11 100%);
+  background-size: 32px 32px, 32px 32px, 100% 100%;
+  background-position: 0 0, 16px 16px, 0 0;
+}
+
+/* Ambient glow accent light circles with Burgundy #B02A3A and Complementary Teal #0F766E */
+.ambient-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.45;
+  transition: opacity 0.5s ease;
+}
+
+/* Organic Slow-Moving Ambient Blob Animations for Live Feel */
+@keyframes ambientMorphSlow1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(35px, -25px, 0) scale(1.08) rotate(4deg);
+  }
+  66% {
+    transform: translate3d(-20px, 30px, 0) scale(0.94) rotate(-3deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes ambientMorphSlow2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  40% {
+    transform: translate3d(-40px, 35px, 0) scale(1.06) rotate(-5deg);
+  }
+  80% {
+    transform: translate3d(25px, -20px, 0) scale(0.96) rotate(3deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes ambientMorphSlow3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(30px, 40px, 0) scale(1.12);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.animate-ambient-slow-1 {
+  animation: ambientMorphSlow1 26s ease-in-out infinite alternate;
+}
+
+.animate-ambient-slow-2 {
+  animation: ambientMorphSlow2 32s ease-in-out infinite alternate;
+}
+
+.animate-ambient-slow-3 {
+  animation: ambientMorphSlow3 38s ease-in-out infinite alternate;
+}
+
+.ambient-orb {
+  will-change: transform;
+}
+
+/* Floating particles animation */
+@keyframes floatParticle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
+  33% {
+    transform: translate(30px, -45px) scale(1.15);
+    opacity: 0.75;
+  }
+  66% {
+    transform: translate(-25px, -70px) scale(0.9);
+    opacity: 0.45;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
+}
+
+/* Document Verification Scanning Laser Beam Animation */
+@keyframes scanLaser {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.35;
+  }
+  85% {
+    opacity: 0.35;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+.scanning-laser {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(15, 118, 110, 0.06) 50%,
+    rgba(15, 118, 110, 0.28) 98%,
+    rgba(176, 42, 58, 0.45) 100%
+  );
+  box-shadow: 0 4px 20px -2px rgba(15, 118, 110, 0.3);
+  animation: scanLaser 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle,
+  .scanning-laser,
+  .animate-ambient-slow-1,
+  .animate-ambient-slow-2,
+  .animate-ambient-slow-3 {
+    animation: none !important;
+    display: none;
+  }
+  .ambient-orb {
+    transform: none !important;
+  }
+}
+
+/* Polished Card Hover Transitions with lift and glow */
+.interactive-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(176, 42, 58, 0.08), 0 0 0 1px rgba(15, 118, 110, 0.12);
+}
+
+.dark .interactive-card:hover {
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.4), 0 4px 14px -2px rgba(176, 42, 58, 0.15), 0 0 0 1px rgba(15, 118, 110, 0.2);
+}
