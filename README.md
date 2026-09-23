@@ -9,6 +9,9 @@ The system analyzes uploaded images and PDF documents, identifies suspicious reg
 It also provides a **Document Comparison** feature to compare an original document with a modified document and identify differences between them. 
  
 --- 
+## 🚀 Live Demo
+
+🔗 **[DocuShield AI – Live Demo](https://docushield-ai-t1gl.onrender.com)**
  
 ## 🎯 Purpose 
  
@@ -147,7 +150,9 @@ Original Document + Modified Document
 
 ## 🌐 Live Demo
 
-**Live Application:** YOUR_RENDER_LINK_HERE
+**Live Application:**
+
+🔗 **[DocuShield AI – Live Demo](https://docushield-ai-t1gl.onrender.com)**
 
 **GitHub:** [https://github.com/Jasmine-sd/docushield-ai](https://github.com/Jasmine-sd/docushield-ai)
 
