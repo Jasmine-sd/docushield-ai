@@ -11,7 +11,7 @@ It also provides a **Document Comparison** feature to compare an original docume
 --- 
 ## 🚀 Live Demo
 
-[🔗 Try DocuShield AI](https://docushield-ai-tlg1.onrender.com)
+https://docushield-ai-tlgl.onrender.com
  
 ## 🎯 Purpose 
  
@@ -151,7 +151,7 @@ Original Document + Modified Document
 ## 🌐 Live Demo
 
 **Live Application:**
-[🔗 Try DocuShield AI](https://docushield-ai-tlg1.onrender.com)
+https://docushield-ai-tlgl.onrender.com
 
 **GitHub:** [https://github.com/Jasmine-sd/docushield-ai](https://github.com/Jasmine-sd/docushield-ai)
 
