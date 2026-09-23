@@ -11,7 +11,7 @@ It also provides a **Document Comparison** feature to compare an original docume
 --- 
 ## 🚀 Live Demo
 
-🔗 **[DocuShield AI – Live Demo](https://docushield-ai-t1gl.onrender.com)**
+[🔗 Try DocuShield AI](https://docushield-ai-tlg1.onrender.com)
  
 ## 🎯 Purpose 
  
@@ -151,16 +151,9 @@ Original Document + Modified Document
 ## 🌐 Live Demo
 
 **Live Application:**
-
-🔗 **[DocuShield AI – Live Demo](https://docushield-ai-t1gl.onrender.com)**
+[🔗 Try DocuShield AI](https://docushield-ai-tlg1.onrender.com)
 
 **GitHub:** [https://github.com/Jasmine-sd/docushield-ai](https://github.com/Jasmine-sd/docushield-ai)
-
----
-
-## ⚠️ Disclaimer
-
-DocuShield AI is a prototype designed for preliminary document analysis and research purposes. Its results should not be treated as definitive proof that a document is genuine or fraudulent. Real-world verification should always involve appropriate human or official verification.
 
 ---
 
